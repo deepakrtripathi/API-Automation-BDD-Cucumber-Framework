@@ -1,0 +1,369 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "watchlist;validate-create-and-delete-watchlist-end-to-end-workflow----card_listing",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "VALIDATE CREATE AND DELETE WATCHLIST END TO END WORKFLOW  - CARD_LISTING",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "call the \"POST\" API using test data \"CARD_LISTING\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-when.mjs:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1459783124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "validate HTTP response code for \"CARD_LISTING\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1661999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "validate \"partial-keys\" api response body for \"CARD_LISTING\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3761167
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 828625
+            },
+            "embeddings": [
+              {
+                "data": "{\"url                    \": \"https://olive.api.dev.axisb.com/customer-pi/card-listing-details\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"requestPayload         \": \"{\"CUSTOMER_ID\":\"833007847\",\"CHANNEL_ID\":\"MBB\",\"GET_ALL_CARDS\":\"true\"}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"expectedResponseStatus \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"actualResponseStatus   \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"expectedResponseBody   \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"data\":{\"ccDetails\":[{\"cardNumber\":\"4514570000037211\",\"primaryCard\":1,\"customerName\":\"MZNcrd Holder\",\"customerId\":\"833007847\",\"peopleSerno\":81225,\"productType\":\"Axis Bank My Zone Credit Card\",\"virtual\":0,\"cardStatus\":\"V\",\"closingBalance\":\"-1227.79\",\"printDueDate\":\"10-JUL-42\",\"embName\":\"EMBOSSINGNAMEFOUR\",\"totalOutstanding\":\"-1815.79\",\"productCode\":\"503\",\"cardSerno\":202486,\"cardCreateDate\":\"16-OCT-41\",\"creditLimit\":\"200000\",\"aggregateCreditLimit\":\"198184.21\",\"caccSerno\":128295,\"identifier\":\"Y\",\"replacedCardDate\":null,\"TAD\":2,\"thirtyDaysActivity\":null,\"showUpgradeBanner\":true,\"cardFace\":{\"image\":\"503.png\",\"variants\":\"MY_ZONE\",\"backgroundColor\":\"#000000\",\"orientation\":\"HORIZONTAL\"},\"cardBin\":\"Visa\",\"features\":{\"portfoliooffers\":{\"isVisible\":false,\"isEnabled\":false},\"totalcreditutilized\":{\"isVisible\":true,\"isEnabled\":true},\"benefitsdashboard\":{\"isVisible\":false,\"isEnabled\":false},\"paynow\":{\"isVisible\":true,\"isEnabled\":true},\"emiProtectPolicy\":{\"isVisible\":false,\"isEnabled\":false},\"unbilledspend\":{\"isVisible\":true,\"isEnabled\":true},\"spendanalyser\":{\"isVisible\":true,\"isEnabled\":true},\"currentstatement\":{\"isVisible\":true,\"isEnabled\":true},\"converttoemi\":{\"isVisible\":false,\"isEnabled\":false},\"availablelimit\":{\"isVisible\":true,\"isEnabled\":true},\"milestone\":{\"isVisible\":true,\"isEnabled\":true},\"digitalunboxing\":{\"isVisible\":true,\"isEnabled\":true},\"overlimitconsent\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"paymenthistory\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":true},\"domesticusage\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"internationalusage\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"blockandreplace\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"setresetpin\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"activateestatement\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"autodebit\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"viewstatement\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":true},\"creditlimitincrease\":{\"isVisible\":false,\"isEnabled\":false},\"instantloan\":{\"isVisible\":false,\"isEnabled\":false},\"upgradecard\":{\"isVisible\":false,\"isEnabled\":false},\"balanceonemi\":{\"isVisible\":false,\"isEnabled\":false},\"rewardsandbenefits\":{\"isVisible\":true,\"isEnabled\":true}},\"message\":\"Some features are disabled for security reasons.\",\"cardType\":\"PRIMARY\",\"eligibleForUnboxing\":true,\"isReplacedCardDateExists\":false,\"unboxingStatus\":{\"_id\":\"65fbe90f17009cb6820df897\",\"CARD_NO\":\"4514XXXXXXXX7211\",\"CUSTOMER_ID\":\"833007847\",\"DIGITAL_UNBOXING_FLAG\":true,\"SEEN_MODULE\":{\"HAS_SEEN_MANAGE_USAGE\":true,\"HAS_SEEN_RESET_PIN\":true},\"createdAt\":\"2024-03-21T08:00:15.158Z\",\"updatedAt\":\"2024-03-21T08:01:01.128Z\",\"__v\":0,\"id\":\"65fbe90f17009cb6820df897\"},\"viewBenefits\":true,\"cardBenefits\":{},\"payByRewards\":false,\"servicePromises\":{\"isEnabled\":false}}],\"unboxingFeaturesResp\":[{\"FEATURE\":\"unboxing\",\"STATUS\":\"ACTIVE\",\"ORDER\":0},{\"FEATURE\":\"domesticusage\",\"STATUS\":\"ACTIVE\",\"ORDER\":1},{\"FEATURE\":\"internationalusage\",\"STATUS\":\"ACTIVE\",\"ORDER\":2},{\"FEATURE\":\"setpin\",\"STATUS\":\"ACTIVE\",\"ORDER\":3},{\"FEATURE\":\"authentication\",\"STATUS\":\"ACTIVE\",\"ORDER\":4}],\"gaEncryptionKey\":\"71D35B2C84E1A439B1BE06DCE04BD924\"}}}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"actualResponseBody     \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"data\":{\"ccDetails\":[{\"cardNumber\":\"4514570000037211\",\"primaryCard\":1,\"customerName\":\"MZNcrd Holder\",\"customerId\":\"833007847\",\"peopleSerno\":81225,\"productType\":\"Axis Bank My Zone Credit Card\",\"virtual\":0,\"cardStatus\":\"V\",\"closingBalance\":\"-1870.88\",\"printDueDate\":\"09-AUG-42\",\"embName\":\"EMBOSSINGNAMEFOUR\",\"totalOutstanding\":\"-1860.88\",\"productCode\":\"503\",\"cardSerno\":202486,\"cardCreateDate\":\"16-OCT-41\",\"creditLimit\":\"200000\",\"aggregateCreditLimit\":\"198138.12\",\"caccSerno\":128295,\"identifier\":\"Y\",\"replacedCardDate\":null,\"TAD\":10,\"thirtyDaysActivity\":null,\"showUpgradeBanner\":true,\"cardFace\":{\"image\":\"503.png\",\"variants\":\"MY_ZONE\",\"backgroundColor\":\"#000000\",\"orientation\":\"HORIZONTAL\"},\"cardBin\":\"Visa\",\"features\":{\"portfoliooffers\":{\"isVisible\":false,\"isEnabled\":false},\"totalcreditutilized\":{\"isVisible\":true,\"isEnabled\":true},\"benefitsdashboard\":{\"isVisible\":false,\"isEnabled\":false},\"paynow\":{\"isVisible\":true,\"isEnabled\":true},\"emiProtectPolicy\":{\"isVisible\":false,\"isEnabled\":false},\"unbilledspend\":{\"isVisible\":true,\"isEnabled\":true},\"spendanalyser\":{\"isVisible\":true,\"isEnabled\":true},\"currentstatement\":{\"isVisible\":true,\"isEnabled\":true},\"converttoemi\":{\"isVisible\":false,\"isEnabled\":false},\"availablelimit\":{\"isVisible\":true,\"isEnabled\":true},\"milestone\":{\"isVisible\":true,\"isEnabled\":true},\"digitalunboxing\":{\"isVisible\":true,\"isEnabled\":true},\"overlimitconsent\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"paymenthistory\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":true},\"domesticusage\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"internationalusage\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"blockandreplace\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"setresetpin\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"activateestatement\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"autodebit\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":false},\"viewstatement\":{\"screen\":\"controlcenter\",\"isVisible\":true,\"isEnabled\":true},\"creditlimitincrease\":{\"isVisible\":false,\"isEnabled\":false},\"instantloan\":{\"isVisible\":false,\"isEnabled\":false},\"upgradecard\":{\"isVisible\":false,\"isEnabled\":false},\"balanceonemi\":{\"isVisible\":false,\"isEnabled\":false},\"rewardsandbenefits\":{\"isVisible\":true,\"isEnabled\":true},\"billpay\":{\"isVisible\":false,\"isEnabled\":false},\"savingaccount\":{\"isVisible\":true,\"isEnabled\":true}},\"message\":\"Some features are disabled for security reasons.\",\"cardType\":\"PRIMARY\",\"eligibleForUnboxing\":true,\"isReplacedCardDateExists\":false,\"unboxingStatus\":{\"_id\":\"65fbe90f17009cb6820df897\",\"CARD_NO\":\"4514XXXXXXXX7211\",\"CUSTOMER_ID\":\"833007847\",\"DIGITAL_UNBOXING_FLAG\":true,\"SEEN_MODULE\":{\"HAS_SEEN_MANAGE_USAGE\":true,\"HAS_SEEN_RESET_PIN\":true},\"createdAt\":\"2024-03-21T08:00:15.158Z\",\"updatedAt\":\"2024-03-21T08:01:01.128Z\",\"__v\":0,\"id\":\"65fbe90f17009cb6820df897\"},\"viewBenefits\":true,\"cardBenefits\":{},\"payByRewards\":false,\"servicePromises\":{\"isEnabled\":false}}],\"unboxingFeaturesResp\":[{\"FEATURE\":\"unboxing\",\"STATUS\":\"ACTIVE\",\"ORDER\":0},{\"FEATURE\":\"domesticusage\",\"STATUS\":\"ACTIVE\",\"ORDER\":1},{\"FEATURE\":\"internationalusage\",\"STATUS\":\"ACTIVE\",\"ORDER\":2},{\"FEATURE\":\"setpin\",\"STATUS\":\"ACTIVE\",\"ORDER\":3},{\"FEATURE\":\"authentication\",\"STATUS\":\"ACTIVE\",\"ORDER\":4}],\"gaEncryptionKey\":\"71D35B2C84E1A439B1BE06DCE04BD924\"}}}\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "watchlist;validate-create-and-delete-watchlist-end-to-end-workflow----get_card_details",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "VALIDATE CREATE AND DELETE WATCHLIST END TO END WORKFLOW  - GET_CARD_DETAILS",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "call the \"POST\" API using test data \"GET_CARD_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-when.mjs:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1398820415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "validate HTTP response code for \"GET_CARD_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 468916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "validate \"partial-keys\" api response body for \"GET_CARD_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 960416
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 881917
+            },
+            "embeddings": [
+              {
+                "data": "{\"url                    \": \"https://olive.api.dev.axisb.com/dashboard/get-card-details\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"requestPayload         \": \"{\"CARD_NO\":\"4514570000037211\",\"CHANNEL_ID\":\"MBB\",\"CARD_NO_TYPE\":\"C\",\"CARD_SER_NO\":\"202486\"}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"expectedResponseStatus \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"actualResponseStatus   \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"expectedResponseBody   \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"data\":[{\"availableLimit\":198184.21,\"unbilledSpends\":-590,\"accountNumber\":\"089000000032619\",\"accountSerno\":128295,\"accountProductName\":\"503\",\"creditLimit\":200000,\"accountStGeneral\":\"V\",\"currency\":\"356\",\"balance\":-1815.79,\"accountCreateDate\":\"2041-10-16\",\"nextStatementDate\":\"2042-07-20\",\"generateDate\":\"2042-06-20\",\"openingBalance\":-590,\"closingBalance\":-1227.79,\"minDue\":-1227.79,\"dueDate\":\"2042-07-13\",\"printDueDate\":\"2042-07-10\",\"paymentAmount\":1,\"paymentDate\":\"2042-07-17\",\"cardNumber\":\"4514570000037211\",\"cardSerno\":202486,\"productName\":\"503\",\"embossingName\":\"EMBOSSINGNAMEFOUR\",\"embNameFromPerson\":\"0\",\"expDate\":\"1046\",\"cardStGeneral\":\"V\",\"primaryCard\":\"1\",\"createDate\":\"2041-10-16\",\"title\":\"MR\",\"firstName\":\"MZNcrd\",\"lastName\":\"Holder\",\"ssn\":\"FQRPM6986F\",\"customerId\":\"833007847\",\"dob\":\"1990-05-22\",\"gender\":\"M\",\"stGeneral\":\"NORM\",\"MAD\":-1225.79,\"TAD\":-1225.79}]}}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"actualResponseBody     \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"data\":[{\"availableLimit\":198138.12,\"unbilledSpends\":0,\"accountNumber\":\"089000000032619\",\"accountSerno\":128295,\"accountProductName\":\"503\",\"creditLimit\":200000,\"accountStGeneral\":\"V\",\"currency\":\"356\",\"balance\":-1860.88,\"accountCreateDate\":\"2041-10-16\",\"nextStatementDate\":\"2042-08-20\",\"generateDate\":\"2042-07-20\",\"openingBalance\":-1227.79,\"closingBalance\":-1870.88,\"minDue\":-1870.88,\"dueDate\":\"2042-08-12\",\"printDueDate\":\"2042-08-09\",\"paymentAmount\":1,\"paymentDate\":\"2042-07-28\",\"cardNumber\":\"4514570000037211\",\"cardSerno\":202486,\"productName\":\"503\",\"embossingName\":\"EMBOSSINGNAMEFOUR\",\"embNameFromPerson\":\"0\",\"expDate\":\"1046\",\"cardStGeneral\":\"V\",\"primaryCard\":\"1\",\"createDate\":\"2041-10-16\",\"title\":\"MR\",\"firstName\":\"MZNcrd\",\"lastName\":\"Holder\",\"ssn\":\"FQRPM6986F\",\"customerId\":\"833007847\",\"dob\":\"1990-05-22\",\"gender\":\"M\",\"stGeneral\":\"NORM\",\"MAD\":-1860.88,\"TAD\":-1860.88}]}}\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "watchlist;validate-create-and-delete-watchlist-end-to-end-workflow----account_details",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "VALIDATE CREATE AND DELETE WATCHLIST END TO END WORKFLOW  - ACCOUNT_DETAILS",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "call the \"POST\" API using test data \"ACCOUNT_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-when.mjs:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1904257250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "validate HTTP response code for \"ACCOUNT_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 781000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "validate \"partial-keys\" api response body for \"ACCOUNT_DETAILS\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1275374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 188542
+            },
+            "embeddings": [
+              {
+                "data": "{\"url                    \": \"https://olive.api.dev.axisb.com/customer-pi/account-details\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"requestPayload         \": \"{\"BRANCH_ID\":\"004\",\"CURRENCY\":\"INR\",\"CHANNEL_ID\":\"MBB\",\"CUSTOMER_ID\":\"833007847\"}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"expectedResponseStatus \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"actualResponseStatus   \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"expectedResponseBody   \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"CustomerDetails\":{\"customerName\":\"PUSHPIT  MATHUR\",\"dateOfBirth\":\"1997-01-11 00:00:00\",\"staffFlag\":\"N\",\"constitutionCode\":\"01\",\"mobile\":\"9891011173\",\"pan\":\"FQRPM6986F\",\"aadharNo\":null,\"passportNo\":null,\"TodayTotFdAmt\":0,\"TaxSaverTotFdAmt\":0,\"healthCode\":\"HC01\",\"segmentationClass\":null,\"suspended\":\"N\",\"isSignAvailable\":\"N\"},\"AccountDetails\":[{\"customerId\":\"833007847\",\"bayUserId\":\"833007847\",\"branchId\":\"003\",\"acid\":\"909010042557246\",\"currencyCode\":\"INR\",\"schemType\":\"SBA\",\"schemCode\":\"SBEZY\",\"productDescription\":\"SAVINGS-EASYACCESS\",\"clearBalanceAmount\":27125.61,\"unClearBalanceAmount\":0,\"openDate\":\"2009-12-05 00:00:00\",\"accountName\":\"JAMAUTADEVI CHAUTHASING CHAUHAN\",\"nickName\":\"JAMAUTADEV\",\"interestRate\":\"0\",\"xferInd\":null,\"deleteFlag\":\"N\",\"rModId\":\"CDCI\",\"rModTime\":\"2024-05-13 12:58:12\",\"rCreId\":\"WFSRE\",\"rCreTime\":\"2009-12-05 12:16:28\",\"createdBy\":\"WFSRE\",\"createdOn\":\"2009-12-05 12:16:28\",\"updatedBy\":\"CONT_SYNC\",\"updatedOn\":\"2024-05-13 14:43:48\",\"accountStatus\":\"OPEN\",\"deviceUniqueId\":\"0\",\"bankId\":\"211\",\"mbNickName\":\"JAMAUTADEV\",\"syncType\":\"C\",\"accountDesc\":\"AC_DESC\",\"custConst\":\"01\",\"relationship\":\"Main\",\"mop\":\"EITHER OR SURVIVOR\",\"ifscCode\":\"UTIB0000003\",\"custType\":null,\"sysUpdateDate\":\"2024-05-13 14:43:48\",\"closeFlag\":\"N\",\"closeDate\":null,\"ownership\":\"C\",\"acctRPTCode\":\"SAPPI\",\"monAvgBal\":26279.87,\"branchName\":\"AHMEDABAD [GJ]\",\"acctFrezStatus\":null,\"ledgerNo\":1,\"pbfFlag\":\"N\",\"acctManager\":\"SN27090\",\"status\":\"A\",\"areaType\":\"METRO\",\"priority\":\"N\",\"burgundy\":\"N\",\"labelCode\":\"\",\"baseLoanAccount\":\"\",\"sanctionLimit\":0,\"typeOfAdvance\":\"\",\"proposalNum\":\"\",\"proposalLabel\":\"\",\"disbursementMode\":null,\"lastTranDate\":\"2024-05-13 00:00:00\",\"isSignAvailable\":\"N\",\"balanceAmt\":27125.61}]}}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"actualResponseBody     \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"CustomerDetails\":{\"customerName\":\"PUSHPIT  MATHUR\",\"dateOfBirth\":\"1997-01-11 00:00:00\",\"staffFlag\":\"N\",\"constitutionCode\":\"01\",\"mobile\":\"9891011173\",\"pan\":\"FQRPM6986F\",\"aadharNo\":null,\"passportNo\":null,\"TodayTotFdAmt\":0,\"TaxSaverTotFdAmt\":0,\"healthCode\":\"HC01\",\"segmentationClass\":null,\"suspended\":\"N\",\"isSignAvailable\":\"N\"},\"AccountDetails\":[{\"customerId\":\"833007847\",\"bayUserId\":\"833007847\",\"branchId\":\"003\",\"acid\":\"909010042557246\",\"currencyCode\":\"INR\",\"schemType\":\"SBA\",\"schemCode\":\"SBEZY\",\"productDescription\":\"SAVINGS-EASYACCESS\",\"clearBalanceAmount\":27112.61,\"unClearBalanceAmount\":0,\"openDate\":\"2009-12-05 00:00:00\",\"accountName\":\"JAMAUTADEVI CHAUTHASING CHAUHAN\",\"nickName\":\"JAMAUTADEV\",\"interestRate\":\"0\",\"xferInd\":null,\"deleteFlag\":\"N\",\"rModId\":\"CDCI\",\"rModTime\":\"2024-05-20 12:24:28\",\"rCreId\":\"WFSRE\",\"rCreTime\":\"2009-12-05 12:16:28\",\"createdBy\":\"WFSRE\",\"createdOn\":\"2009-12-05 12:16:28\",\"updatedBy\":\"CONT_SYNC\",\"updatedOn\":\"2024-05-20 12:24:40\",\"accountStatus\":\"OPEN\",\"deviceUniqueId\":\"0\",\"bankId\":\"211\",\"mbNickName\":\"JAMAUTADEV\",\"syncType\":\"C\",\"accountDesc\":\"AC_DESC\",\"custConst\":\"01\",\"relationship\":\"Main\",\"mop\":\"EITHER OR SURVIVOR\",\"ifscCode\":\"UTIB0000003\",\"custType\":null,\"sysUpdateDate\":\"2024-05-20 12:24:40\",\"closeFlag\":\"N\",\"closeDate\":null,\"ownership\":\"C\",\"acctRPTCode\":\"SAPPI\",\"monAvgBal\":26279.87,\"branchName\":\"AHMEDABAD [GJ]\",\"acctFrezStatus\":null,\"ledgerNo\":1,\"pbfFlag\":\"N\",\"acctManager\":\"SN27090\",\"status\":\"A\",\"areaType\":\"METRO\",\"priority\":\"N\",\"burgundy\":\"N\",\"labelCode\":\"\",\"baseLoanAccount\":\"\",\"sanctionLimit\":0,\"typeOfAdvance\":\"\",\"proposalNum\":\"\",\"proposalLabel\":\"\",\"disbursementMode\":null,\"lastTranDate\":\"2024-12-16 00:00:00\",\"isSignAvailable\":\"N\",\"balanceAmt\":27112.61}]}}\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "watchlist;validate-create-and-delete-watchlist-end-to-end-workflow----internal_fund_transfer_sync",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "VALIDATE CREATE AND DELETE WATCHLIST END TO END WORKFLOW  - INTERNAL_FUND_TRANSFER_SYNC",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "call the \"POST\" API using test data \"INTERNAL_FUND_TRANSFER_SYNC\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-when.mjs:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1505486415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "validate HTTP response code for \"INTERNAL_FUND_TRANSFER_SYNC\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 531959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "validate \"partial-keys\" api response body for \"INTERNAL_FUND_TRANSFER_SYNC\"",
+            "match": {
+              "location": "file:/Users/fc19668/Desktop/OliveAPI/olive-api-test/test/features/step_definitions/api-then.mjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 887624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 453916
+            },
+            "embeddings": [
+              {
+                "data": "{\"url                    \": \"https://olive.api.dev.axisb.com/finacle/internal-fund-transfer-sync\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"requestPayload         \": \"{\"CURRENCY_CODE\":\"INR\",\"CURRENCY\":\"356\",\"TYPE\":\"PAYMT\",\"REFERENCE\":\"C\",\"APP_NAME\":\"OLIVE\",\"C24_SOURCE_SYSTEM_ID\":\"MBB\",\"TRANSACTION_REFERENCE_NUMBER\":\"xJTwY6BPbxKLlM\",\"AMOUNT_VALUE\":\"1\",\"DEBITOR_BRANCH_ID\":\"003\",\"DEBITOR_ACCOUNT_ID\":\"909010042557246\",\"DEBITOR_ACCOUNT_TYPE\":\"SBA\",\"DEBITOR_TRANSACTION_PARTICULAR\":\"CreditCard Payment XXXX 7211 Ref#LU6JG86E2XDABC\",\"CHANNEL_ID\":\"MBB\",\"CUSTOMER_ID\":\"833007847\",\"CARD_NO\":\"4514570000037211\",\"REASON\":\"mbpt\",\"TEXT\":\"MB PAYMENT #xJTwY6BPbxKLlM\",\"PAYMENT_DATETIME\":\"\",\"PHONE_NO\":\"919702011595\",\"CREDITOR_TRANSACTION_PARTICULAR\":\"MB PAYMENT #xJTwY6BPbxKLlM\",\"REMARKS1\":\"4514570000037211\",\"MPIN\":\"165098b711c4833366206267dd38414599d5c607bf1fda26226edf515915fdb5ab2985c77382b19681d3a174b0775b40af668878239edb41b6056e2d580d945002d69940410449b2c34300024b704111d60832148253dc7e6899540efa378f586df9e43b3e15be2c34e9438c22a6e9c50c4187bf172fdc24b4d1b4cf4b7a071ba68f910760ce8a7fabde6a43573a76ba3f9966e40d7af3ed29c9299c2e152a0a82905d4c0dcf94a9f02322114ba3f2520f5553ce63056e81e6a145c41783d64f857545bcf85e612b005c8e919b7182b26833f76377f0ea137ec84c271c66ec468fe7127e46c8515dd756db4b4c2c598dcab2cff5f0efeaee2e90647987a7abc2\"}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"expectedResponseStatus \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"actualResponseStatus   \": \"200\"}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\"expectedResponseBody   \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"status\":\"000\",\"valueDate\":\"2024-05-13\",\"currencyCode\":\"INR\",\"transactionId\":\"S92628995\",\"message\":\" Transaction creation Successful\",\"TransactionStatus\":\"Payment Success\",\"TransactionId\":\"S92628995\",\"TransactionReferenceNumber\":\"LU6JG86E2XDSMX\",\"Amount\":\"1\",\"AccountId\":\"909010042557246\",\"TransactionParticular\":\"CreditCard Payment XXXX 7211 Ref#LU6JG86E2XDSMX\",\"TransactionDate\":\"2024-05-13 16:39:28\",\"PointsRedeemed\":null,\"AccountType\":\"SBA\"}}}\"}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"actualResponseBody     \": \"{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"statusCode\":200,\"status\":\"OK\",\"message\":\"Success\",\"data\":{\"status\":\"000\",\"valueDate\":\"2024-05-20\",\"currencyCode\":\"INR\",\"transactionId\":\"S92692444\",\"message\":\" Transaction creation Successful\",\"TransactionStatus\":\"Payment Success\",\"TransactionId\":\"S92692444\",\"TransactionReferenceNumber\":\"xJTwY6BPbxKLlM\",\"Amount\":\"1\",\"AccountId\":\"909010042557246\",\"TransactionParticular\":\"CreditCard Payment XXXX 7211 Ref#LU6JG86E2XDABC\",\"TransactionDate\":\"2024-05-20 12:24:41\",\"PointsRedeemed\":null,\"AccountType\":\"SBA\"}}}\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "watchlist",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "WATCHLIST",
+    "tags": [],
+    "uri": "test/features/watchlist.feature"
+  }
+]

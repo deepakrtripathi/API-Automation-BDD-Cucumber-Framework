@@ -1,0 +1,31 @@
+{
+  "name": "olive-api-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -rf test/reports && mkdir -p test/reports/cucumber-results && cucumber-js",
+    "reports": "node reporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "9.5.1",
+    "@cucumber/pretty-formatter": "1.0.1",
+    "auto-helper-module": "git+https://bitbucket.axisb.com/scm/qaa/auto-helper.git#master",
+    "chai": "^4.3.6",
+    "chai-exclude": "^2.1.0",
+    "chai-like": "^1.1.1",
+    "chai-subset": "^1.6.0",
+    "chai-things": "^0.2.0",
+    "cucumber-html-reporter": "^5.5.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^2.6.7",
+    "npm-failsafe": "^0.4.3",
+    "randomstring": "^1.2.3",
+    "replace-in-file": "^6.2.0",
+    "rimraf": "^3.0.2"
+  }
+}
